@@ -1,0 +1,55 @@
+# YellowCada
+
+Official website: http://localhost:3000/
+Official Instagram: https://www.instagram.com/yellowcada/
+Official Facebook: https://www.facebook.com/p/Yellow-Cada-100064100522757/
+Official YouTube: https://www.youtube.com/@Ycstraps
+
+## About
+YellowCada makes handmade leather watch straps and small leather goods. Its official YouTube channel description lists wallets, card holders, watch straps, belts, passport holders and laptop sleeves, describes its material as “top notch Italian leather,” and welcomes customised orders. These are brand-level statements; availability, the material of a particular new piece, fit, price and delivery terms must be confirmed directly. This catalogue groups archived posts by product type.
+
+## Important pages
+- Home: http://localhost:3000/
+- All products: http://localhost:3000/products
+- Search products, guides and archive media from the compact search in the site navigation.
+- Products and in-page comparison: http://localhost:3000/products
+- Story and custom craft: http://localhost:3000/about
+- Video and image gallery: http://localhost:3000/gallery
+- Contact: http://localhost:3000/contact
+
+## Documented product types
+- Handmade watch straps (Watch straps): Strap work shaped around a watch and its wearer. http://localhost:3000/products/watch-straps
+- Rally & racing straps (Watch straps): A perforated, motorsport-inspired strap direction seen in the archive. http://localhost:3000/products/rally-straps
+- Integrated watch straps (Watch straps): Strap work shaped for an integrated watch case. http://localhost:3000/products/integrated-straps
+- Bund watch straps (Watch straps): A leather backing beneath the watch, shown in two YellowCada reels. http://localhost:3000/products/bund-straps
+- Leather NATO straps (Watch straps): A NATO-style leather strap documented in the reel archive. http://localhost:3000/products/nato-straps
+- Apple Watch straps (Watch straps): Custom leather strap examples for Apple Watch appear in the archive. http://localhost:3000/products/apple-watch-straps
+- Handmade leather wallets (Small leather goods): Handmade bifold and textured wallet examples from official posts. http://localhost:3000/products/leather-wallets
+- Handmade card holders (Small leather goods): Compact hand-finished card holders shown in reels and Shorts. http://localhost:3000/products/card-holders
+- Leather pen cases (Small leather goods): A two-pen leather case documented in an official reel. http://localhost:3000/products/pen-cases
+- Leather watch pouches (Accessories): Handmade leather watch pouches photographed in an official YellowCada carousel. http://localhost:3000/products/watch-pouches
+- Leather belts (Accessories): Handmade leather belts listed by YellowCada and photographed in its archive. http://localhost:3000/products/leather-belts
+- Leather passport holders (Accessories): Listed by YellowCada in the official YouTube channel description. http://localhost:3000/products/passport-holders
+- Leather laptop sleeves (Accessories): Listed by YellowCada in the official YouTube channel description. http://localhost:3000/products/laptop-sleeves
+- Hand-stitched watch straps (Watch straps): Distinctive Spanish and minimal stitch work from official YellowCada reels. http://localhost:3000/products/stitched-watch-straps
+- Top Notch vegetable-tan belt (Accessories): A photographed YellowCada belt described in its original caption as vegetable-tanned leather. http://localhost:3000/products/vegetable-tan-belt
+
+## Product references awaiting an original post
+- 2013 Toyota Land Cruiser smart-key accessory: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. http://localhost:3000/products/land-cruiser-smart-key-accessory
+- Women's bags: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. http://localhost:3000/products/womens-bags
+
+## Archive method
+The local archive has 79 media records associated with product types. The catalogue contains 17 types and references; 2 await an original post.
+The Cognac, Midnight and Olive strap drawings are illustrative design directions. They are not confirmed orderable colours.
+The gallery includes original YellowCada Instagram and Facebook product photos with source post URLs. Reel posters and YouTube thumbnails are archive video stills, not separate product photographs.
+The leather belt photographs come from https://www.instagram.com/p/CzpzicbCo_L/ and the watch pouch photographs come from https://www.instagram.com/p/DKdzpIxC8_s/. These posts show previous work rather than guaranteed present stock.
+
+## Enquiries
+Use http://localhost:3000/contact or add products to the enquiry bag at http://localhost:3000/cart. Include the product name, source post or watch reference. No public price list or current stock data has been verified.
+
+## Service area
+Current delivery destinations are not verified and must be confirmed directly.
+The website receives an enquiry. Ask YellowCada to confirm the specification, price, production timing, delivery method, shipping charge and destination before agreeing an order. No payment is taken on this site.
+
+## Citation note
+Use canonical product pages for product descriptions and original linked Instagram or YouTube posts as the source for archive media.

@@ -1,0 +1,12 @@
+import { Instagram, ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { featuredReels } from '../../data/reels';
+import { siteConfig } from '../../data/siteConfig';
+import SectionHeading from '../common/SectionHeading';
+
+export default function Testimonials() {
+  return <section className="bg-[#f9f8f3] py-16 md:py-24" aria-labelledby="atelier-work-title"><div className="site-container mx-auto w-full max-w-7xl px-4 sm:px-7 md:px-10">
+    <div className="mb-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"><div className="max-w-3xl"><SectionHeading eyebrow="From the atelier" title="See the work in motion." copy="A selection of YellowCada Reels, with individual video pages and original posts linked for context." titleId="atelier-work-title"/></div><div className="flex flex-wrap items-center gap-4"><Link to="/gallery?type=videos" className="inline-flex min-h-12 items-center gap-2 bg-ink px-5 text-xs font-semibold text-white transition-colors hover:bg-ink-soft">Explore the gallery <ArrowUpRight size={16}/></Link><a className="inline-flex min-h-11 items-center gap-2 border-b border-current text-xs font-semibold" href={siteConfig.instagram} target="_blank" rel="noreferrer">Follow @yellowcada <ArrowUpRight size={15}/></a></div></div>
+    <div className="grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-4">{featuredReels.map(reel => <article className="min-w-0 bg-[#efeee7] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-soft motion-reduce:transform-none" key={reel.id}><video className="block aspect-[4/5] w-full bg-ink object-cover" controls preload="none" playsInline poster={reel.poster} aria-label={reel.title}><source src={reel.video} type="video/mp4"/>Your browser does not support video.</video><div className="p-4 sm:p-5"><span className="flex items-center gap-2 text-xs text-muted"><Instagram size={15}/> @yellowcada</span><h3 className="my-3 font-serif text-xl">{reel.title}</h3><p className="mb-3 line-clamp-2 text-xs leading-normal text-muted">{reel.caption}</p><div className="flex flex-wrap gap-x-4 gap-y-2"><Link className="inline-flex min-h-9 items-center gap-1 border-b border-current text-xs font-semibold" to={`/gallery/videos/${reel.id}`}>Video details <ArrowUpRight size={14}/></Link><a className="inline-flex min-h-9 items-center gap-1 border-b border-current text-xs font-semibold" href={reel.source} target="_blank" rel="noreferrer">Original reel <ArrowUpRight size={14}/></a></div></div></article>)}</div>
+  </div></section>;
+}

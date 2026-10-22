@@ -1,0 +1,48 @@
+import { catalogProducts, catalogStats } from '../src/data/catalogue.js';
+import { origin, savePublic } from './seo-shared.mjs';
+
+const lines = [
+  '# YellowCada',
+  '',
+  `Official website: ${origin}/`,
+  'Official Instagram: https://www.instagram.com/yellowcada/',
+  'Official Facebook: https://www.facebook.com/p/Yellow-Cada-100064100522757/',
+  'Official YouTube: https://www.youtube.com/@Ycstraps',
+  '',
+  '## About',
+  'YellowCada makes handmade leather watch straps and small leather goods. Its official YouTube channel description lists wallets, card holders, watch straps, belts, passport holders and laptop sleeves, describes its material as “top notch Italian leather,” and welcomes customised orders. These are brand-level statements; availability, the material of a particular new piece, fit, price and delivery terms must be confirmed directly. This catalogue groups archived posts by product type.',
+  '',
+  '## Important pages',
+  `- Home: ${origin}/`,
+  `- All products: ${origin}/products`,
+  '- Search products, guides and archive media from the compact search in the site navigation.',
+  `- Products and in-page comparison: ${origin}/products`,
+  `- Story and custom craft: ${origin}/about`,
+  `- Video and image gallery: ${origin}/gallery`,
+  `- Contact: ${origin}/contact`,
+  '',
+  '## Documented product types',
+  ...catalogProducts.filter(product => product.verification !== 'reference-to-confirm').map(product => `- ${product.name} (${product.category}): ${product.shortDescription} ${origin}/products/${product.slug}`),
+  '',
+  '## Product references awaiting an original post',
+  ...catalogProducts.filter(product => product.verification === 'reference-to-confirm').map(product => `- ${product.name}: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. ${origin}/products/${product.slug}`),
+  '',
+  '## Archive method',
+  `The local archive has ${catalogStats.associatedMedia} media records associated with product types. The catalogue contains ${catalogStats.products} types and references; ${catalogProducts.filter(product => product.verification === 'reference-to-confirm').length} await an original post.`,
+  'The Cognac, Midnight and Olive strap drawings are illustrative design directions. They are not confirmed orderable colours.',
+  'The gallery includes original YellowCada Instagram and Facebook product photos with source post URLs. Reel posters and YouTube thumbnails are archive video stills, not separate product photographs.',
+  'The leather belt photographs come from https://www.instagram.com/p/CzpzicbCo_L/ and the watch pouch photographs come from https://www.instagram.com/p/DKdzpIxC8_s/. These posts show previous work rather than guaranteed present stock.',
+  '',
+  '## Enquiries',
+  `Use ${origin}/contact or add products to the enquiry bag at ${origin}/cart. Include the product name, source post or watch reference. No public price list or current stock data has been verified.`,
+  '',
+  '## Service area',
+  'Current delivery destinations are not verified and must be confirmed directly.',
+  'The website receives an enquiry. Ask YellowCada to confirm the specification, price, production timing, delivery method, shipping charge and destination before agreeing an order. No payment is taken on this site.',
+  '',
+  '## Citation note',
+  'Use canonical product pages for product descriptions and original linked Instagram or YouTube posts as the source for archive media.',
+];
+await savePublic('llms.txt', lines.join('\n')+'\n');
+await savePublic('humans.txt',`Brand: YellowCada\nOrganization: YellowCada\nWebsite design and development: Tralionex\nDeveloper website: https://tralionex.pk/\nBuilt with: Vite, React, React DOM, React Router, Tailwind CSS, Node.js and SQLite\nDeveloper note: Build-time prerendered product catalogue with enquiry-only contact. Archive imagery shows past work; marked colour drawings are illustrative.\nContact: ${origin}/contact\nInstagram: https://www.instagram.com/yellowcada/\nFacebook: https://www.facebook.com/p/Yellow-Cada-100064100522757/\nYouTube: https://www.youtube.com/@Ycstraps\n`);
+console.log('Generated llms.txt and humans.txt');

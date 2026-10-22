@@ -1,0 +1,10 @@
+Brand: YellowCada
+Organization: YellowCada
+Website design and development: Tralionex
+Developer website: https://tralionex.pk/
+Built with: Vite, React, React DOM, React Router, Tailwind CSS, Node.js and SQLite
+Developer note: Build-time prerendered product catalogue with enquiry-only contact. Archive imagery shows past work; marked colour drawings are illustrative.
+Contact: http://localhost:3000/contact
+Instagram: https://www.instagram.com/yellowcada/
+Facebook: https://www.facebook.com/p/Yellow-Cada-100064100522757/
+YouTube: https://www.youtube.com/@Ycstraps

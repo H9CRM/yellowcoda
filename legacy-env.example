@@ -1,0 +1,16 @@
+# Copy this file to .env. No installation or npm dependencies are needed.
+HOST=127.0.0.1
+PORT=3000
+APP_URL=http://localhost:3000
+NODE_ENV=development
+DATA_DIR=./data
+# For HTTPS deployment, set NODE_ENV=production and an https APP_URL.
+# The supplied Docker service listens on 0.0.0.0 behind your HTTPS proxy.
+# Only trust a proxy you control; never enable this on a directly exposed server.
+TRUST_PROXY=false
+BODY_LIMIT_BYTES=5242880
+SESSION_HOURS=12
+# Optional actual email delivery. Without these, mail stays in the private outbox.
+RESEND_API_KEY=
+EMAIL_FROM=
+SUPPORT_NOTIFY_EMAIL=

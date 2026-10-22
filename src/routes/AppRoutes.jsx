@@ -1,0 +1,21 @@
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home';
+import Shop from '../pages/Shop';
+import Products from '../pages/Products';
+import ServiceDetail from '../pages/ServiceDetail';
+import About from '../pages/About';
+import FAQPage from '../pages/FAQPage';
+import Contact from '../pages/Contact';
+import Cart from '../pages/Cart';
+import Checkout from '../pages/Checkout';
+import NotFound from '../pages/NotFound';
+import Portfolio from '../pages/Portfolio';
+import PortfolioDetail from '../pages/PortfolioDetail';
+import Gallery from '../pages/Gallery';
+import VideoDetail from '../pages/VideoDetail';
+import ImageDetail from '../pages/ImageDetail';
+import Guides from '../pages/Guides';
+import GuideDetail from '../pages/GuideDetail';
+import TrackOrder from '../pages/TrackOrder';
+import Privacy from '../pages/Privacy';
+export default function AppRoutes() { return <Routes><Route path="/" element={<Home/>}/><Route path="/search" element={<Navigate to="/" replace/>}/><Route path="/shop" element={<Shop/>}/><Route path="/products" element={<Products/>}/><Route path="/services" element={<Navigate to="/about#craft" replace/>}/><Route path="/products/:slug" element={<ServiceDetail/>}/><Route path="/about" element={<About/>}/><Route path="/faq" element={<FAQPage/>}/><Route path="/contact" element={<Contact/>}/><Route path="/compare" element={<Navigate to="/products" replace/>}/><Route path="/portfolio" element={<Portfolio/>}/><Route path="/portfolio/:id" element={<PortfolioDetail/>}/><Route path="/gallery" element={<Gallery/>}/><Route path="/gallery/videos/:id" element={<VideoDetail/>}/><Route path="/gallery/images/:id" element={<ImageDetail/>}/><Route path="/guides" element={<Guides/>}/><Route path="/guides/:slug" element={<GuideDetail/>}/><Route path="/track-order" element={<TrackOrder/>}/><Route path="/privacy" element={<Privacy/>}/><Route path="/cart" element={<Cart/>}/><Route path="/checkout" element={<Checkout/>}/><Route path="*" element={<NotFound/>}/></Routes>; }

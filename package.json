@@ -1,0 +1,51 @@
+{
+  "name": "yellowcada-vite-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "dev": "vite --force",
+    "dev:api": "node --watch server/storefront.mjs",
+    "build": "npm run generate:posters && vite build && vite build --ssr src/entry-server.jsx --outDir .ssr && npm run prerender && npm run generate:seo",
+    "build:ssg": "npm run build",
+    "prerender": "node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "start": "node server/storefront.mjs",
+    "setup": "node scripts/setup.mjs",
+    "backup": "node scripts/backup.mjs",
+    "mail:flush": "node scripts/mail-flush.mjs",
+    "lint": "eslint .",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "generate:image-sitemap": "node scripts/generate-image-sitemap.mjs",
+    "generate:llms": "node scripts/generate-llms.mjs",
+    "generate:posters": "node scripts/generate-posters.mjs",
+    "generate:seo": "npm run generate:sitemap && npm run generate:image-sitemap && npm run generate:llms",
+    "audit:catalogue": "node scripts/audit-catalogue.mjs",
+    "check:html": "node scripts/check-html.mjs",
+    "smoke:enquiry": "node scripts/smoke-enquiry.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.3.3",
+    "vite": "^6.4.1"
+  }
+}
