@@ -1,0 +1,10 @@
+export const faqs = [
+  { question: 'Can I order a strap in a specific size?', answer: 'YellowCada shares made-to-order watch straps. Provide the exact watch reference, measured lug width and wrist circumference when enquiring. Final compatibility is confirmed before an order.' },
+  { question: 'What materials can I ask about?', answer: 'The public YouTube channel describes Italian leather among the materials used. Ask YellowCada which leather, lining, stitching and hardware are currently suitable for your specific piece.' },
+  { question: 'How long does a custom strap take?', answer: 'Timing depends on the confirmed design and delivery destination. Ask YellowCada for a current production and delivery estimate before commissioning a piece.' },
+  { question: 'How is delivery arranged after an enquiry?', answer: 'Share your delivery destination with the product requirements. Before agreeing an order, ask YellowCada to confirm the production estimate, available delivery method, shipping charge and expected arrival. The website does not publish a fixed courier, delivery area or shipping price and takes no payment.' },
+  { question: 'Are the designs shown ready to buy?', answer: 'The illustrated designs are concepts until YellowCada confirms the real product photograph, materials, price and availability. The enquiry bag lets you send your preferred direction without payment.' },
+  { question: 'Do you only make watch straps?', answer: 'YellowCada’s Instagram posts show pouches, pen cases, card holders and wallets. The public YouTube channel description also lists belts, passport holders and laptop sleeves. Ask for current availability and a quote.' },
+  { question: 'Are the gallery photos separate products?', answer: 'The gallery contains original YellowCada Instagram and Facebook product photos, Reel posters and official YouTube thumbnails. Each links to its source post or video and documents past work, not current stock.' },
+  { question: 'Can I browse media one item at a time?', answer: 'Yes. Open any video or image page and use the Previous and Next controls to move through the archive.' }
+];
