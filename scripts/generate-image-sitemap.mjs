@@ -7,7 +7,8 @@ import { officialPhotos } from '../src/data/officialPhotos.js';
 import { readFile } from 'node:fs/promises';
 import { origin, escapeXml, savePublic } from './seo-shared.mjs';
 
-const image = (src,title,caption) => `<image:image><image:loc>${escapeXml(origin+src)}</image:loc><image:title>${escapeXml(title)}</image:title><image:caption>${escapeXml(caption)}</image:caption></image:image>`;
+const clean = value => String(value).replace(/\s+/g, ' ').trim();
+const image = (src,title,caption) => `<image:image><image:loc>${escapeXml(origin+src)}</image:loc><image:title>${escapeXml(clean(title))}</image:title><image:caption>${escapeXml(clean(caption))}</image:caption></image:image>`;
 const reels = JSON.parse(await readFile(new URL('../research/instagram-reels.json',import.meta.url),'utf8'));
 const youtube = JSON.parse(await readFile(new URL('../research/youtube-videos.json',import.meta.url),'utf8'));
 const galleryImages = [

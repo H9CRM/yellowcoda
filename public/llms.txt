@@ -1,6 +1,6 @@
 # YellowCada
 
-Official website: http://localhost:3000/
+Official website: https://h9crm.github.io/yellowcoda/
 Official Instagram: https://www.instagram.com/yellowcada/
 Official Facebook: https://www.facebook.com/p/Yellow-Cada-100064100522757/
 Official YouTube: https://www.youtube.com/@Ycstraps
@@ -9,34 +9,34 @@ Official YouTube: https://www.youtube.com/@Ycstraps
 YellowCada makes handmade leather watch straps and small leather goods. Its official YouTube channel description lists wallets, card holders, watch straps, belts, passport holders and laptop sleeves, describes its material as “top notch Italian leather,” and welcomes customised orders. These are brand-level statements; availability, the material of a particular new piece, fit, price and delivery terms must be confirmed directly. This catalogue groups archived posts by product type.
 
 ## Important pages
-- Home: http://localhost:3000/
-- All products: http://localhost:3000/products
+- Home: https://h9crm.github.io/yellowcoda/
+- All products: https://h9crm.github.io/yellowcoda/products
 - Search products, guides and archive media from the compact search in the site navigation.
-- Products and in-page comparison: http://localhost:3000/products
-- Story and custom craft: http://localhost:3000/about
-- Video and image gallery: http://localhost:3000/gallery
-- Contact: http://localhost:3000/contact
+- Products and in-page comparison: https://h9crm.github.io/yellowcoda/products
+- Story and custom craft: https://h9crm.github.io/yellowcoda/about
+- Video and image gallery: https://h9crm.github.io/yellowcoda/gallery
+- Contact: https://h9crm.github.io/yellowcoda/contact
 
 ## Documented product types
-- Handmade watch straps (Watch straps): Strap work shaped around a watch and its wearer. http://localhost:3000/products/watch-straps
-- Rally & racing straps (Watch straps): A perforated, motorsport-inspired strap direction seen in the archive. http://localhost:3000/products/rally-straps
-- Integrated watch straps (Watch straps): Strap work shaped for an integrated watch case. http://localhost:3000/products/integrated-straps
-- Bund watch straps (Watch straps): A leather backing beneath the watch, shown in two YellowCada reels. http://localhost:3000/products/bund-straps
-- Leather NATO straps (Watch straps): A NATO-style leather strap documented in the reel archive. http://localhost:3000/products/nato-straps
-- Apple Watch straps (Watch straps): Custom leather strap examples for Apple Watch appear in the archive. http://localhost:3000/products/apple-watch-straps
-- Handmade leather wallets (Small leather goods): Handmade bifold and textured wallet examples from official posts. http://localhost:3000/products/leather-wallets
-- Handmade card holders (Small leather goods): Compact hand-finished card holders shown in reels and Shorts. http://localhost:3000/products/card-holders
-- Leather pen cases (Small leather goods): A two-pen leather case documented in an official reel. http://localhost:3000/products/pen-cases
-- Leather watch pouches (Accessories): Handmade leather watch pouches photographed in an official YellowCada carousel. http://localhost:3000/products/watch-pouches
-- Leather belts (Accessories): Handmade leather belts listed by YellowCada and photographed in its archive. http://localhost:3000/products/leather-belts
-- Leather passport holders (Accessories): Listed by YellowCada in the official YouTube channel description. http://localhost:3000/products/passport-holders
-- Leather laptop sleeves (Accessories): Listed by YellowCada in the official YouTube channel description. http://localhost:3000/products/laptop-sleeves
-- Hand-stitched watch straps (Watch straps): Distinctive Spanish and minimal stitch work from official YellowCada reels. http://localhost:3000/products/stitched-watch-straps
-- Top Notch vegetable-tan belt (Accessories): A photographed YellowCada belt described in its original caption as vegetable-tanned leather. http://localhost:3000/products/vegetable-tan-belt
+- Handmade watch straps (Watch straps): Strap work shaped around a watch and its wearer. https://h9crm.github.io/yellowcoda/products/watch-straps
+- Rally & racing straps (Watch straps): A perforated, motorsport-inspired strap direction seen in the archive. https://h9crm.github.io/yellowcoda/products/rally-straps
+- Integrated watch straps (Watch straps): Strap work shaped for an integrated watch case. https://h9crm.github.io/yellowcoda/products/integrated-straps
+- Bund watch straps (Watch straps): A leather backing beneath the watch, shown in two YellowCada reels. https://h9crm.github.io/yellowcoda/products/bund-straps
+- Leather NATO straps (Watch straps): A NATO-style leather strap documented in the reel archive. https://h9crm.github.io/yellowcoda/products/nato-straps
+- Apple Watch straps (Watch straps): Custom leather strap examples for Apple Watch appear in the archive. https://h9crm.github.io/yellowcoda/products/apple-watch-straps
+- Handmade leather wallets (Small leather goods): Handmade bifold and textured wallet examples from official posts. https://h9crm.github.io/yellowcoda/products/leather-wallets
+- Handmade card holders (Small leather goods): Compact hand-finished card holders shown in reels and Shorts. https://h9crm.github.io/yellowcoda/products/card-holders
+- Leather pen cases (Small leather goods): A two-pen leather case documented in an official reel. https://h9crm.github.io/yellowcoda/products/pen-cases
+- Leather watch pouches (Accessories): Handmade leather watch pouches photographed in an official YellowCada carousel. https://h9crm.github.io/yellowcoda/products/watch-pouches
+- Leather belts (Accessories): Handmade leather belts listed by YellowCada and photographed in its archive. https://h9crm.github.io/yellowcoda/products/leather-belts
+- Leather passport holders (Accessories): Listed by YellowCada in the official YouTube channel description. https://h9crm.github.io/yellowcoda/products/passport-holders
+- Leather laptop sleeves (Accessories): Listed by YellowCada in the official YouTube channel description. https://h9crm.github.io/yellowcoda/products/laptop-sleeves
+- Hand-stitched watch straps (Watch straps): Distinctive Spanish and minimal stitch work from official YellowCada reels. https://h9crm.github.io/yellowcoda/products/stitched-watch-straps
+- Top Notch vegetable-tan belt (Accessories): A photographed YellowCada belt described in its original caption as vegetable-tanned leather. https://h9crm.github.io/yellowcoda/products/vegetable-tan-belt
 
 ## Product references awaiting an original post
-- 2013 Toyota Land Cruiser smart-key accessory: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. http://localhost:3000/products/land-cruiser-smart-key-accessory
-- Women's bags: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. http://localhost:3000/products/womens-bags
+- 2013 Toyota Land Cruiser smart-key accessory: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. https://h9crm.github.io/yellowcoda/products/land-cruiser-smart-key-accessory
+- Women's bags: user-supplied social-media reference; original YellowCada post, image, specification and availability have not been verified. https://h9crm.github.io/yellowcoda/products/womens-bags
 
 ## Archive method
 The local archive has 79 media records associated with product types. The catalogue contains 17 types and references; 2 await an original post.
@@ -45,11 +45,11 @@ The gallery includes original YellowCada Instagram and Facebook product photos w
 The leather belt photographs come from https://www.instagram.com/p/CzpzicbCo_L/ and the watch pouch photographs come from https://www.instagram.com/p/DKdzpIxC8_s/. These posts show previous work rather than guaranteed present stock.
 
 ## Enquiries
-Use http://localhost:3000/contact or add products to the enquiry bag at http://localhost:3000/cart. Include the product name, source post or watch reference. No public price list or current stock data has been verified.
+Use https://h9crm.github.io/yellowcoda/contact or add products to the enquiry bag at https://h9crm.github.io/yellowcoda/cart. Include the product name, source post or watch reference. No public price list or current stock data has been verified.
 
 ## Service area
 Current delivery destinations are not verified and must be confirmed directly.
-The website receives an enquiry. Ask YellowCada to confirm the specification, price, production timing, delivery method, shipping charge and destination before agreeing an order. No payment is taken on this site.
+This static catalogue does not submit or store enquiries. Copy your selected product details and contact YellowCada through its linked official Instagram or Facebook account. Confirm specification, price, production timing, delivery method and shipping charge directly. No payment is taken on this site.
 
 ## Citation note
 Use canonical product pages for product descriptions and original linked Instagram or YouTube posts as the source for archive media.

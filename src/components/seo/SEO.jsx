@@ -1,3 +1,4 @@
+import { sitePath } from '../../utils/sitePath';
 import { Helmet } from 'react-helmet-async';
 import { siteConfig } from '../../data/siteConfig';
 import { absoluteUrl, pageTitle } from '../../utils/seoHelpers';
@@ -10,7 +11,7 @@ export default function SEO({ title, description = siteConfig.description, path 
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots || (siteConfig.launchReady ? 'index,follow,max-image-preview:large' : 'noindex,nofollow')} />
-    <link rel="canonical" href={canonical} />
+    <link rel="canonical" href={sitePath(canonical)} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteConfig.name} />
     <meta property="og:title" content={ogTitle || fullTitle} />

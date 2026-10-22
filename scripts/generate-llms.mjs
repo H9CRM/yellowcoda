@@ -1,5 +1,5 @@
 import { catalogProducts, catalogStats } from '../src/data/catalogue.js';
-import { origin, savePublic } from './seo-shared.mjs';
+import { origin, staticHosting, savePublic } from './seo-shared.mjs';
 
 const lines = [
   '# YellowCada',
@@ -38,7 +38,7 @@ const lines = [
   '',
   '## Service area',
   'Current delivery destinations are not verified and must be confirmed directly.',
-  'The website receives an enquiry. Ask YellowCada to confirm the specification, price, production timing, delivery method, shipping charge and destination before agreeing an order. No payment is taken on this site.',
+  staticHosting ? 'This static catalogue does not submit or store enquiries. Copy your selected product details and contact YellowCada through its linked official Instagram or Facebook account. Confirm specification, price, production timing, delivery method and shipping charge directly. No payment is taken on this site.' : 'The website receives an enquiry. Ask YellowCada to confirm the specification, price, production timing, delivery method, shipping charge and destination before agreeing an order. No payment is taken on this site.',
   '',
   '## Citation note',
   'Use canonical product pages for product descriptions and original linked Instagram or YouTube posts as the source for archive media.',

@@ -7,7 +7,7 @@ Vite, React and Tailwind storefront for YellowCada. Every public route is preren
 Requires Node.js 22.16+.
 
 ```powershell
-cd D:\WORK\watch-website\yellowcada-vite
+cd D:\WORK\watch-website\yellowcada-vite\yellowcoda
 Copy-Item .env.example .env
 npm install
 npm run build
@@ -55,3 +55,25 @@ npm run smoke:enquiry
 ```
 
 The existing Node server serves the prerendered `dist/` files and `/api/*` from one origin. Deploy with a persistent private `data/` directory; run `npm ci && npm run build && npm start`. The archived videos make the build large, so a production host may need owned object storage for them.
+
+## GitHub Pages deployment
+
+The Pages destination for this repository is `https://h9crm.github.io/yellowcoda/`. The `Deploy YellowCada to GitHub Pages` workflow builds on pushes to `main`, using Node 24 and the committed npm lockfile. Repository Settings → Pages → Source must be **GitHub Actions**. It uploads only `dist/`, after lint and HTML verification pass.
+
+The workflow obtains the deployment URL from GitHub Pages and sets `VITE_SITE_URL` and `VITE_STATIC_HOSTING=true`. Vite assets, router basename, native links, images, video posters, manifest, canonicals, schemas and sitemaps all use the same project path. Every public route has a generated directory index; `404.html` contains a real error page. `/services`, `/compare` and `/search` have static redirects. Page metadata is managed by Helmet during both rendering and hydration.
+
+Pages hosts the static catalogue, browser enquiry bag, saved products, comparison and media. It cannot run the included Node/SQLite API or admin dashboard. In this deployment, contact and checkout prepare a message visitors can copy and send through the linked official Instagram or Facebook account. Tracking directs visitors to the same channels. The website does not submit or record those enquiries. The Node-backed forms remain available when building without `VITE_STATIC_HOSTING=true` for a Node host.
+
+Reproduce the Pages build locally:
+
+```powershell
+$env:VITE_SITE_URL='https://h9crm.github.io/yellowcoda'
+$env:VITE_STATIC_HOSTING='true'
+npm ci
+npm run lint
+npm run build
+npm run check:html
+npm run preview
+```
+
+Open `http://localhost:4173/yellowcoda/`. The checker validates 215 rendered routes, metadata, JSON-LD, image alt attributes, local targets, deployment URLs, manifests and sitemap targets. GitHub Pages project-level `robots.txt` is provided at `/yellowcoda/robots.txt`; crawler policy for the account host is controlled by its root `/robots.txt`. The sitemap and `llms.txt` remain available under the project path. These discovery files help describe the site; inclusion in search or AI answers is not guaranteed.

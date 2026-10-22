@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import DirectEnquiry from '../components/common/DirectEnquiry';
+import { siteConfig } from '../data/siteConfig';
+import { absoluteUrl } from '../utils/seoHelpers';
+import { bagProductPath } from '../data/bag';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import SEO from '../components/seo/SEO';
@@ -15,6 +19,13 @@ export default function Checkout() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [confirmation, setConfirmation] = useState(null);
+  if (siteConfig.staticHosting) {
+    const draft = ['Hello YellowCada, I would like to discuss:', ...cart.map(item => {
+      const product = findBagProduct(item.id);
+      return `${item.quantity} × ${product.name}${item.direction ? ` — ${formatStrapDirection(item.direction)}` : ''}\n${absoluteUrl(bagProductPath(product))}`;
+    }), '', 'Watch model / lug width:', 'Preferred material and colour:', 'Delivery destination:', '', 'Please confirm availability, fit, price and delivery.'].join('\n');
+    return <DirectEnquiry key={draft} path="/checkout" draft={draft}/>;
+  }
 
   async function submit(event) {
     event.preventDefault();

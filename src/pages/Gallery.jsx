@@ -1,3 +1,4 @@
+import { sitePath } from '../utils/sitePath';
 import { useCallback, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ArrowUpRight, Image as ImageIcon, Play, SlidersHorizontal } from 'lucide-react';
@@ -24,7 +25,7 @@ function MediaCard({ item, onOpen }) {
   const video = item.type !== 'image';
   return <article className="group flex h-full min-w-0 flex-col overflow-hidden bg-white shadow-sm transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-soft motion-reduce:transform-none">
     <button type="button" onClick={() => onOpen(item)} aria-label={`${video ? 'Play video' : 'Open image'}: ${item.title}`} className="relative block aspect-[4/5] w-full shrink-0 overflow-hidden bg-sand text-left">
-      <img src={item.thumbnail} alt={item.alt} width="480" height="600" loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none ${video ? 'bg-ink object-contain' : 'object-cover'}`}/>
+      <img src={sitePath(item.thumbnail)} alt={item.alt} width="480" height="600" loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none ${video ? 'bg-ink object-contain' : 'object-cover'}`}/>
       <span className="absolute bottom-3 left-3 grid size-11 place-items-center rounded-full bg-paper/95 text-ink shadow-sm">{video ? <Play size={18} fill="currentColor"/> : <ImageIcon size={18}/>}</span>
       <span className="absolute left-3 top-3 bg-paper/95 px-2.5 py-1.5 text-[.58rem] font-bold uppercase tracking-[.12em] text-ink">{item.kind}</span>
     </button>

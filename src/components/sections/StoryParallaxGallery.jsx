@@ -1,3 +1,4 @@
+import { sitePath } from '../../utils/sitePath';
 import { useRef } from 'react';
 import { motion, useReducedMotion, useScroll, useSpring, useTransform } from 'framer-motion';
 
@@ -28,7 +29,7 @@ export default function StoryParallaxGallery() {
         style={reducedMotion ? undefined : { y: index === 0 ? left : right }}
       >
         {images.map(image => <figure key={image.src} className="relative m-0 overflow-hidden bg-sand shadow-[0_18px_35px_rgba(23,32,27,.13)]">
-          <img src={image.src} alt={image.alt} width="540" height="680" loading="lazy" className="aspect-[4/5] w-full object-cover" />
+          <img src={sitePath(image.src)} alt={image.alt} width="540" height="680" loading="lazy" className="aspect-[4/5] w-full object-cover" />
           <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/70 to-transparent px-3 pb-3 pt-9 text-[.6rem] font-semibold uppercase tracking-[.12em] text-white sm:px-4 sm:pb-4">{image.label}</figcaption>
         </figure>)}
       </motion.div>)}

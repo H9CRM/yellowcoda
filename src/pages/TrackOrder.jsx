@@ -1,5 +1,7 @@
 import { buttonClass } from '../components/common/buttonStyles';
 import { useState } from 'react';
+import DirectEnquiry from '../components/common/DirectEnquiry';
+import { siteConfig } from '../data/siteConfig';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import SEO from '../components/seo/SEO';
@@ -11,6 +13,7 @@ export default function TrackOrder() {
   const [result,setResult] = useState(null);
   const [error,setError] = useState('');
   const [busy,setBusy] = useState(false);
+  if (siteConfig.staticHosting) return <DirectEnquiry path="/track-order" tracking/>;
   async function submit(event) {
     event.preventDefault(); setBusy(true); setError(''); setResult(null);
     const values = new FormData(event.currentTarget);
